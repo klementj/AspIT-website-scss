@@ -1,0 +1,42 @@
+.uddannelsen{
+    display: grid;
+    // grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    grid-gap: .5rem;
+
+    padding-left: .5rem;
+    padding-right: .5rem;
+
+    article{
+
+        img{
+            width:100%;
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+
+    &__intro{
+        grid-column: span 4;
+    }
+
+    &__card{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+
+    &__text{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        // border-bottom: 3px solid goldenrod;
+        padding: 2em 1em 0em 1em;
+
+        p{
+            flex-grow: 1;
+        }
+    }
+}

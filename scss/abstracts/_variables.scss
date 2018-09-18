@@ -1,0 +1,36 @@
+// COLOR VARIABLES
+$color-primary: #0F7D3F;
+$color-primary-light: #18C965;
+
+$color-secondary: #101d2c;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #404040;
+$color-grey-dark-2: #6D5D4B;
+
+// FONT VARIABLES
+$default-font-size: 16px;
+
+$font-primary: MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
+$font-display: MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
+
+$baseline: 1.5rem;
+
+$h1: 3.157rem;
+$h2: 2.369rem;
+$h3: 1.777rem;
+$h4: 1.333rem;
+$h5: 1rem;
+
+$minScreen: 20rem;
+$maxScreen: 50rem;
+$minFont: .8rem;
+$maxFont: 2rem;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;    // 600px;

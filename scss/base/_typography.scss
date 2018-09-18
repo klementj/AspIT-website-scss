@@ -1,0 +1,101 @@
+%heading {
+    font-family: $font-display;
+    font-weight: 400;
+    margin-bottom: $baseline;
+}
+
+h1 {
+    @extend %heading;
+    font-size: $h1;
+    line-height: $h1;
+    &.light{
+        text-align: left;
+        color: $color-grey-light-1;
+    }
+}
+
+h2 {
+    @extend %heading;
+    font-size: $h2;
+    line-height: $h2;
+    text-align: center; 
+    
+    &.light { color: $color-grey-light-1; }
+    &.dark { color: $color-grey-dark-1; }
+}
+
+h3 {
+    @extend %heading;
+    font-size: $h3;
+    line-height: $h3;
+    color: $color-primary;
+
+    &.light{
+        color: $color-grey-light-1;
+    }
+    // text-transform: uppercase;
+}
+
+h4 {
+    @extend %heading;
+    font-size: $h4;
+    line-height: $h4;
+
+    &.light { color: $color-grey-light-1; }
+    &.dark { color: $color-grey-dark-1; }
+}
+
+h5{
+    @extend %heading;
+    font-size: $h5;
+    line-height: $h5;
+}
+
+p{	
+	line-height: $baseline;
+    margin-bottom: $baseline;
+    
+    &.light{
+        color: $color-grey-light-1;
+    }
+}
+
+a{
+    line-height: $baseline;
+    margin-bottom: $baseline;
+
+    &.link{
+        border-bottom: 1px solid $color-primary;
+        padding: .5rem 0;
+
+        &::after{
+            content: " >>"
+        }
+    }
+
+}
+
+.white-text{
+    color: white;
+}
+
+.btn {
+    background-color: transparent;
+    border: 1px solid $color-primary;
+    color: #fff;
+    font-family: $font-display;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover {
+        background-color: $color-primary-light;
+    }
+}
+
+.mb-sm { margin-bottom: 2rem; }
+.mb-md { margin-bottom: 3rem; }
+.mb-lg { margin-bottom: 4rem; }
+.mb-hg { margin-bottom: 8rem; }

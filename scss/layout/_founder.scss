@@ -1,0 +1,29 @@
+.founder{
+    background: $color-primary;
+
+    article{
+        display: grid;
+        grid-template-columns: 3fr min-content;
+        grid-column-gap: 1rem;
+
+        blockquote{
+            align-self: center;
+            color: white;
+            text-align: right;
+
+            h3{
+                text-transform: lowercase;
+                color:white;
+            }
+            
+            p:nth-child(2){
+                margin-bottom: 0;
+                color: $color-grey-light-2;
+            }
+        }
+
+        img{
+            border-radius: 50%;
+        }
+    }
+}
