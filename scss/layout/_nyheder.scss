@@ -1,64 +1,38 @@
 .nyheder{
     display: grid;
-    // grid-template-columns: 2fr 2fr 2fr 3fr;
-    // grid-template-rows: max-content 1fr 1fr;
-
     grid-template-columns: repeat(1fr, 12);
     grid-template-rows: repeat(1fr, 6);
-
     grid-gap: .5rem;
-    
+
     padding-left: .5rem;
     padding-right: .5rem;
-
-
 
     &__intro{
         grid-column: 1 / 13;
     }
 
-    figure{
-
-
-        background-color: $color-primary;
+    &__card{
+        background-color: white;
         // background: white;
         overflow: hidden;
         border: 1px solid $color-grey-light-2;
 
-        img{
+        &-img{
             width: 100%;
             object-fit: cover;
-            height: 70%;
-            // z-index: 0;
-            // position: relative;
-            // vertical-align: top;
-            opacity: 1;
-
-            overflow:hidden;
-
-            transform: scale(1.15);
-
-            transition: transform 0.5s, opacity 0.5s;
+            height: 380px;
+            transition: transform .2s;
 
             &:hover{
-                opacity: 0.5;
-                transform: scale(1.03);
+                transform: scale(1.1);
             }
         }
 
-        figcaption{
-            // z-index: 99;
+        &-caption{
             background:white;
-            // height: 100%;
             padding: 2.5rem 1rem 2rem;
             height: 100%;
-            // opacity: .5;
-            
-            // padding: 1rem 2rem;
-            // position: absolute;
-            // bottom: 20%;
-            // align-items: center;
-            // z-index: 99;
+
         }
 
     }

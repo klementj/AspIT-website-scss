@@ -37,7 +37,7 @@ body {
   line-height: 1.5rem;
   font-family: MyriadPro-Regular, "Myriad Pro Regular", MyriadPro, "Myriad Pro", Helvetica, Arial, sans-serif;
   background: #f9f7f6;
-  color: #404040;
+  color: #333;
   font-weight: 300;
 }
 
@@ -72,7 +72,7 @@ h2.light {
 }
 
 h2.dark {
-  color: #404040;
+  color: #333;
 }
 
 h3 {
@@ -95,7 +95,7 @@ h4.light {
 }
 
 h4.dark {
-  color: #404040;
+  color: #333;
 }
 
 h5 {
@@ -131,6 +131,7 @@ a.link::after {
 }
 
 .btn {
+  background-color: transparent;
   border: 1px solid #0F7D3F;
   color: #fff;
   font-family: MyriadPro-Regular, "Myriad Pro Regular", MyriadPro, "Myriad Pro", Helvetica, Arial, sans-serif;
@@ -140,11 +141,10 @@ a.link::after {
   cursor: pointer;
   -webkit-transition: all .2s;
   transition: all .2s;
-  background-color: #18C965;
 }
 
 .btn:hover {
-  background-color: transparent;
+  background-color: #18C965;
 }
 
 .mb-sm {
@@ -184,11 +184,11 @@ a.link::after {
 }
 
 .form__input:focus:invalid {
-  border-bottom: 3px solid #404040;
+  border-bottom: 3px solid #333;
 }
 
 .form__input::-webkit-input-placeholder {
-  color: #404040;
+  color: #333;
 }
 
 .form__label {
@@ -258,12 +258,12 @@ a.link::after {
 
 .container {
   margin: 0 auto;
-  width: 50%;
+  width: 95%;
 }
 
 @media only screen and (max-width: 62.5em) {
   .container {
-    width: 65%;
+    width: 90%;
   }
 }
 
@@ -331,10 +331,11 @@ a.link::after {
   color: white;
   padding: 1rem 2rem;
   text-decoration: none;
+  border-bottom: 1px solid transparent;
 }
 
 .header a:hover {
-  background: green;
+  border-bottom: 1px solid #18C965;
 }
 
 .header a img {
@@ -510,34 +511,29 @@ a.link::after {
   grid-column: 1 / 13;
 }
 
-.nyheder figure {
-  background-color: #0F7D3F;
+.nyheder__card {
+  background-color: white;
   overflow: hidden;
   border: 1px solid #aaa;
 }
 
-.nyheder figure img {
+.nyheder__card-img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 70%;
-  opacity: 1;
-  overflow: hidden;
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
-  transition: opacity 0.5s, -webkit-transform 0.5s;
-  transition: transform 0.5s, opacity 0.5s;
-  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+  height: 380px;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
 }
 
-.nyheder figure img:hover {
-  opacity: 0.5;
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+.nyheder__card-img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
-.nyheder figure figcaption {
+.nyheder__card-caption {
   background: white;
   padding: 2.5rem 1rem 2rem;
   height: 100%;

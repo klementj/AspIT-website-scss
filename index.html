@@ -32,9 +32,8 @@
 
     <!-- Uddannelsen -->
     <section class="uddannelsen">
-        <div class="uddannelsen__intro container">
+        <div class="uddannelsen__intro">
             <h2>Om AspIT</h2>
-            <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem voluptatibus ullam ut quam nostrum non unde facilis sequi quas deserunt adipisci beatae excepturi corrupti ratione nobis repellendus voluptas, voluptates maiores.</p> -->
         </div>
         
         <article class="uddannelsen__card">
@@ -88,37 +87,37 @@
 
     <!-- Nyheder -->
     <section class="nyheder">
-        <div class="nyheder__intro container">
+        <div class="nyheder__intro">
             <h2>Nyheder</h2>
         </div>
 
-        <figure>
-            <img src="img/nyheder/cowi.png" alt="">
-            <figcaption>
+        <figure class="nyheder__card">
+            <img class="nyheder__card-img" src="img/nyheder/cowi.png" alt="">
+            <figcaption class="nyheder__card-caption">
                 <h3>Samfundsøkonomisk analyse af AspIT</h3>
             </figcaption>
         </figure>
-        <figure>
-            <img src="img/nyheder/elev_alene_i_amterdam.jpg" alt="">
-            <figcaption>
+        <figure class="nyheder__card">
+            <img class="nyheder__card-img" src="img/nyheder/elev_alene_i_amterdam.jpg" alt="">
+            <figcaption class="nyheder__card-caption">
                 <h3>Elev alene på studieophold i Amsterdam</h3>
             </figcaption>
         </figure>
-        <figure>
-            <img src="img/nyheder/aspitskolernesdak.PNG" alt="">
-            <figcaption>
+        <figure class="nyheder__card">
+            <img class="nyheder__card-img" src="img/nyheder/aspitskolernesdak.PNG" alt="">
+            <figcaption class="nyheder__card-caption">
                 <h3>Husk AspIT skolernes dag den 2. september</h3>
             </figcaption>
         </figure>
-        <figure>
-            <img src="img/nyheder/hmmm.PNG" alt="">
-            <figcaption>
+        <figure class="nyheder__card">
+            <img class="nyheder__card-img" src="img/nyheder/hmmm.PNG" alt="">
+            <figcaption class="nyheder__card-caption">
                 <h3>Erhversleder melder klart ud</h3>
             </figcaption>
         </figure>
-        <figure>
-            <img src="img/nyheder/csis.jpg" alt="">
-            <figcaption>
+        <figure class="nyheder__card">
+            <img class="nyheder__card-img" src="img/nyheder/csis.jpg" alt="">
+            <figcaption class="nyheder__card-caption">
                 <h3>CSIS indstillet til årets AspIT pris</h3>
             </figcaption>
         </figure>
@@ -129,7 +128,7 @@
         </article>
         <article class="nyheder__tilmeld">
             <img src="" alt="">
-            <h3 class="light">Tilmeld nyhedsbrev</h3>
+            <h3 class="light">Nyhedsbrev</h3>
             <p class="light">Få nyheder fra AspIT direkte i din indbakke</p>
             <form action="" class="form">
                 <div class="form__group">
@@ -141,7 +140,7 @@
                     <label for="email" class="form__label">test</label>
                 </div>
                 <div class="form__group">
-                    <button class="btn">Tilmeld</button>
+                    <button class="btn">Tilmeld nyhedsbrev</button>
                 </div>
             </form>
         </article>
@@ -184,63 +183,11 @@
         </div>
         
         <div class="kontakt__kort">
+            <!-- Implement OpenStreetMap -->
             <img src="img/kort.png" alt="">
         </div>
 
     </section>
-            
-            
-    <!-- <section class="afdelinger">
-        <img src="img/kort.png" alt="">
-    </section> -->
-<!--     
-    <section class="kontakt">
-        <h2>Kontakt</h2>
-                    <div class="book__form">
-                        <form action="#" class="form">
-                            <div class="u-margin-bottom-medium">
-                                <h2 class="heading-secondary">
-                                    Start booking now
-                                </h2>
-                            </div>
-                            
-                            <div class="form__group">
-                                <input type="text" class="form__input" placeholder="Full name" id="name" required="">
-                                <label for="name" class="form__label">Full name</label>
-                            </div>
-                            
-                            <div class="form__group">
-                                <input type="email" class="form__input" placeholder="Email address" id="email" required="">
-                                <label for="email" class="form__label">Email address</label>
-                            </div>
-                            
-                            <div class="form__group u-margin-bottom-medium">
-                                <div class="form__radio-group">
-                                    <input type="radio" class="form__radio-input" id="small" name="size">
-                                    <label for="small" class="form__radio-label">
-                                        <span class="form__radio-button"></span>
-                                        Small tour group
-                                    </label>
-                                </div>
-                                
-                                <div class="form__radio-group">
-                                    <input type="radio" class="form__radio-input" id="large" name="size">
-                                    <label for="large" class="form__radio-label">
-                                        <span class="form__radio-button"></span>
-                                        Large tour group
-                                    </label>
-                                </div>
-                            </div>
-                            
-                            <div class="form__group">
-                                <button class="btn btn--green">Next step →</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-    </section> -->
-
     
     <section class="gallery">
         <figure><img src="img/gallery/1.jpg" alt=""></figure>
@@ -252,8 +199,6 @@
         <figure><img src="img/gallery/7.jpg" alt=""></figure>
         <figure><img src="img/gallery/8.jpg" alt=""></figure>
         <figure><img src="img/gallery/9.jpg" alt=""></figure>
-        <figure><img src="img/gallery/10.jpg" alt=""></figure>
-        <figure><img src="img/gallery/11.jpg" alt=""></figure>
     </section>
 
     <section class="footer">
